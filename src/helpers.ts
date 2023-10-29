@@ -12,7 +12,7 @@ export const toStringName: PropertyDescriptor = Object.getOwnPropertyDescriptor(
  * @param fromDescriptor The source descriptor.
  */
 export function canCopyProperty(
-  toDescriptor: PropertyDescriptor,
+  toDescriptor: PropertyDescriptor | undefined,
   fromDescriptor: PropertyDescriptor,
 ): boolean {
   return (

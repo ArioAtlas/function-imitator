@@ -32,10 +32,6 @@ export function imitate(
 
     const toDescriptor = Object.getOwnPropertyDescriptor(to, property);
 
-    if (!toDescriptor) {
-      continue;
-    }
-
     if (
       canCopyProperty(toDescriptor, fromDescriptor) ||
       !options.ignoreNonConfigurable

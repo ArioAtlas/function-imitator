@@ -1,10 +1,10 @@
 {
   "name": "function-imitator",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "it allows one function to imitate another.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"no test specified\"",
+    "test": "jest",
     "clean": "rm -rf node_modules && rm package-lock.json",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "build": "tsc && node create-package.js",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/ArioAtlas/function-imitator#readme",
   "devDependencies": {
+    "@types/jest": "^29.5.6",
     "@types/node": "^20.8.9",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
@@ -30,7 +31,13 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-prettier": "^5.0.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
   }
 }
