@@ -1,6 +1,6 @@
 {
   "name": "function-imitator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "it allows one function to imitate another.",
   "main": "index.js",
   "scripts": {
