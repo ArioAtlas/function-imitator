@@ -1,0 +1,36 @@
+{
+  "name": "function-imitator",
+  "version": "1.0.0",
+  "description": "it allows one function to imitate another.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no test specified\"",
+    "clean": "rm -rf node_modules && rm package-lock.json",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "build": "tsc && node create-package.js",
+    "publish": "cd ./dist && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArioAtlas/function-imitator.git"
+  },
+  "keywords": [],
+  "author": "Omid Golshan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArioAtlas/function-imitator/issues"
+  },
+  "homepage": "https://github.com/ArioAtlas/function-imitator#readme",
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
